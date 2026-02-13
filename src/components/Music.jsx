@@ -18,7 +18,7 @@ const Music = () => {
   ];
 
   return (
-    <div className="bg-white opacity-95 rounded-2xl shadow-lg p-8 flex flex-col items-center max-w-md w-full hover:scale-105 transition-transform duration-300">
+    <div className="bg-white opacity-95 -mt-20 rounded-2xl shadow-lg p-8 flex flex-col items-center max-w-md w-full hover:scale-105 transition-transform duration-300">
       <h2
         id="title-card"
         className="text-3xl font-semibold mb-4 text-center text-rose-600"
