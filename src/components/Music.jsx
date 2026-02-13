@@ -1,6 +1,11 @@
 const Music = () => {
   const tracks = [
     {
+      title: "blue",
+      artist: "yung kai",
+      url: "https://open.spotify.com/track/3be9ACTxtcL6Zm4vJRUiPG?si=77994c414b9343cd",
+    },
+    {
       title: "About You",
       artist: "The 1975",
       url: "https://open.spotify.com/track/3hEfpBHxgieRLz4t3kLNEg?si=d35c1c684a064b35",

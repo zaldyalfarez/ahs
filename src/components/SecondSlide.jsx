@@ -64,10 +64,10 @@ const SecondSlide = ({ onNext }) => {
           Terima kasih
         </span>
         <span ref={middleRef} style={spanStyle}>
-          karena selalu
+          karena udah
         </span>
         <span ref={lastRef} style={spanStyle}>
-          ada untukku
+          selalu ada
         </span>
       </h1>
     </div>
