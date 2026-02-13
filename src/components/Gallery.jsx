@@ -44,7 +44,7 @@ const Gallery = () => {
         Our Roblox Memories
       </h2>
 
-      <div className="w-[280px] h-50 bg-gray-100 rounded-lg flex items-center justify-center mb-4 overflow-hidden">
+      <div className="w-70 h-50 bg-gray-100 rounded-lg flex items-center justify-center mb-4 overflow-hidden">
         <img
           src={images[currentIndex]}
           alt={`Gallery ${currentIndex + 1}`}

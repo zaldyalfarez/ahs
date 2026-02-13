@@ -17,10 +17,9 @@ const FirstSlide = ({ onNext }) => {
   useEffect(() => {
     const img = imgRef.current;
     if (img) {
-      // Restart GIF untuk memastikan autoplay di Safari/iOS
       const src = img.src;
-      img.src = ""; // reset
-      img.src = src; // set ulang
+      img.src = "";
+      img.src = src;
     }
   }, []);
 

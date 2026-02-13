@@ -32,7 +32,7 @@ const Music = () => {
             href={track.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center bg-purple-100 border border-purple-300 rounded-lg px-4 py-3 text-gray-700 shadow-sm hover:bg-purple-200 transition-colors w-[280px] sm:w-full"
+            className="flex items-center bg-purple-100 border border-purple-300 rounded-lg px-4 py-3 text-gray-700 shadow-sm hover:bg-purple-200 transition-colors w-70 sm:w-full"
           >
             {/* Icon musik */}
             <div className="mr-3 shrink-0 text-purple-600 text-lg">🎵</div>
