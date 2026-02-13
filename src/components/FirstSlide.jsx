@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { gsap } from "gsap";
+import BubuGIF from "../assets/gif/BubuGIF.gif"; // import GIF
 
 const FirstSlide = ({ onNext }) => {
   const containerRef = useRef(null);
@@ -17,11 +18,7 @@ const FirstSlide = ({ onNext }) => {
       ref={containerRef}
       className="w-full h-screen flex flex-col items-center justify-center"
     >
-      <img
-        src="/src/assets/gif/BubuGIF.gif"
-        alt="gif"
-        className="w-60 h-60 object-contain"
-      />
+      <img src={BubuGIF} alt="gif" className="w-60 h-60 object-contain" />
 
       <h1
         onClick={handleNext}
