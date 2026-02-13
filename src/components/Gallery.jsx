@@ -59,14 +59,17 @@ const Gallery = () => {
         <button
           onClick={handleBack}
           disabled={currentIndex === 0}
-          className="px-4 py-2 rounded-lg bg-red-200 text-red-700 hover:bg-red-300 disabled:bg-red-100 disabled:text-red-300 transition-colors"
+          className="px-4 py-2 rounded-lg bg-red-200 text-red-700 
+             hover:bg-red-300 active:bg-red-400 disabled:bg-red-100 disabled:text-red-300 transition-colors"
         >
           Kembali
         </button>
+
         <button
           onClick={handleNext}
           disabled={currentIndex === images.length - 1}
-          className="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-300 disabled:bg-red-100 disabled:text-red-300 transition-colors"
+          className="px-4 py-2 rounded-lg bg-red-500 text-white 
+             hover:bg-red-600 active:bg-red-700 disabled:bg-red-100 disabled:text-red-300 transition-colors"
         >
           Selanjutnya
         </button>
