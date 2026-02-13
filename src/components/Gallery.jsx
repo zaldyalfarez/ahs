@@ -61,14 +61,14 @@ const Gallery = () => {
           disabled={currentIndex === 0}
           className="px-4 py-2 rounded-lg bg-red-200 text-red-700 hover:bg-red-300 disabled:bg-red-100 disabled:text-red-300 transition-colors"
         >
-          Back
+          Kembali
         </button>
         <button
           onClick={handleNext}
           disabled={currentIndex === images.length - 1}
           className="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-300 disabled:bg-red-100 disabled:text-red-300 transition-colors"
         >
-          Next
+          Selanjutnya
         </button>
       </div>
     </div>
