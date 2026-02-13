@@ -2,19 +2,19 @@ import { useState } from "react";
 
 const Gallery = () => {
   const images = [
-    "/ahs/src/assets/img/2.png",
-    "/ahs/src/assets/img/3.png",
-    "/ahs/src/assets/img/4.png",
-    "/ahs/src/assets/img/5.png",
-    "/ahs/src/assets/img/6.png",
-    "/ahs/src/assets/img/7.png",
-    "/ahs/src/assets/img/8.png",
-    "/ahs/src/assets/img/14.png",
-    "/ahs/src/assets/img/9.png",
-    "/ahs/src/assets/img/10.png",
-    "/ahs/src/assets/img/11.png",
-    "/ahs/src/assets/img/12.png",
-    "/ahs/src/assets/img/13.png",
+    "/src/assets/img/2.png",
+    "/src/assets/img/3.png",
+    "/src/assets/img/4.png",
+    "/src/assets/img/5.png",
+    "/src/assets/img/6.png",
+    "/src/assets/img/7.png",
+    "/src/assets/img/8.png",
+    "/src/assets/img/14.png",
+    "/src/assets/img/9.png",
+    "/src/assets/img/10.png",
+    "/src/assets/img/11.png",
+    "/src/assets/img/12.png",
+    "/src/assets/img/13.png",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

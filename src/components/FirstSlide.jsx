@@ -18,7 +18,7 @@ const FirstSlide = ({ onNext }) => {
       className="w-full h-screen flex flex-col items-center justify-center"
     >
       <img
-        src="/ahs/src/assets/gif/BubuGIF.gif"
+        src="/src/assets/gif/BubuGIF.gif"
         alt="gif"
         className="w-60 h-60 object-contain"
       />
