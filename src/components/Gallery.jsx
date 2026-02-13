@@ -1,16 +1,16 @@
 import { useState } from "react";
-import Img2 from "../assets/img/2.png";
-import Img3 from "../assets/img/3.png";
-import Img4 from "../assets/img/4.png";
-import Img5 from "../assets/img/5.png";
-import Img6 from "../assets/img/6.png";
-import Img7 from "../assets/img/7.png";
-import Img8 from "../assets/img/8.png";
-import Img9 from "../assets/img/9.png";
-import Img10 from "../assets/img/10.png";
-import Img11 from "../assets/img/11.png";
-import Img13 from "../assets/img/13.png";
-import Img14 from "../assets/img/14.png";
+import Img2 from "../assets/img/2.webp";
+import Img3 from "../assets/img/3.webp";
+import Img4 from "../assets/img/4.webp";
+import Img5 from "../assets/img/5.webp";
+import Img6 from "../assets/img/6.webp";
+import Img7 from "../assets/img/7.webp";
+import Img8 from "../assets/img/8.webp";
+import Img9 from "../assets/img/9.webp";
+import Img10 from "../assets/img/10.webp";
+import Img11 from "../assets/img/11.webp";
+import Img13 from "../assets/img/13.webp";
+import Img14 from "../assets/img/14.webp";
 
 const images = [
   Img2,
