@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #fb6f92;
+  --color-primary-hover: #ff8fab;
+  --color-soft: #ffe5ec;
+  --color-light: #ffc2d1;
+  --color-medium: #ffb3c6;
+  --color-text-main: #1f2937;
+  --color-text-secondary: #6b7280;
+}
+
+body {
+  font-family: "SN Pro", sans-serif;
+}
+
+#intro {
+  font-family: "Birthstone", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#title-card {
+  font-family: "Birthstone", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

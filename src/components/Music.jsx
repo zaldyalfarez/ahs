@@ -1,0 +1,50 @@
+const Music = () => {
+  const tracks = [
+    {
+      title: "About You",
+      artist: "The 1975",
+      url: "https://open.spotify.com/track/3hEfpBHxgieRLz4t3kLNEg?si=d35c1c684a064b35",
+    },
+    {
+      title: "Wish You Were Here",
+      artist: "Neck Deep",
+      url: "https://open.spotify.com/track/4Ssi6tKwrTHi5qvDndrZRP?si=5557dd067b864c5c",
+    },
+    {
+      title: "My Love",
+      artist: "Westlife",
+      url: "https://open.spotify.com/track/5p0ietGkLNEqx1Z7ijkw5g?si=fc854ab2c1084bb3",
+    },
+  ];
+
+  return (
+    <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center max-w-md w-full hover:scale-105 transition-transform duration-300">
+      <h2
+        id="title-card"
+        className="text-3xl font-semibold mb-4 text-center text-rose-600"
+      >
+        Song That Reminds Me of You
+      </h2>
+      <div className="w-full flex flex-col gap-3 items-center">
+        {tracks.map((track, index) => (
+          <a
+            key={index}
+            href={track.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center bg-purple-100 border border-purple-300 rounded-lg px-4 py-3 text-gray-700 shadow-sm hover:bg-purple-200 transition-colors w-[280px] sm:w-full"
+          >
+            {/* Icon musik */}
+            <div className="mr-3 shrink-0 text-purple-600 text-lg">🎵</div>
+            <div className="flex flex-col">
+              <span className="font-semibold">{track.title}</span>
+              <span className="text-sm text-gray-600">{track.artist}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Music;
