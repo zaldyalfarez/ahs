@@ -36,7 +36,7 @@ const SecondSlide = ({ onNext }) => {
     });
 
     // total delay otomatis
-    const totalDuration = 0.5 + 1.75 + 0.7 + 1.5 + 1.2 + 0.5;
+    const totalDuration = 0.5 + 1.75 + 0.7 + 1.5 + 1.2 + 1.0;
     const timeout = setTimeout(onNext, totalDuration * 1000);
 
     return () => clearTimeout(timeout);
@@ -62,13 +62,13 @@ const SecondSlide = ({ onNext }) => {
         className="text-5xl sm:text-7xl md:text-8xl font-extrabold text-rose-500 text-center"
       >
         <span ref={firstRef} style={spanStyle}>
-          Thank you
+          Terima kasih
         </span>
         <span ref={middleRef} style={spanStyle}>
-          for always
+          karena selalu
         </span>
         <span ref={lastRef} style={spanStyle}>
-          being there
+          ada untukku
         </span>
       </h1>
     </div>

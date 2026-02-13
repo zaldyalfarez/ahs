@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { gsap } from "gsap";
-import BubuGIF from "../assets/gif/BubuGIF.gif"; // import GIF
+import BubuGIF from "../assets/gif/BubuGIF.gif";
 
 const FirstSlide = ({ onNext }) => {
   const containerRef = useRef(null);
@@ -26,7 +26,7 @@ const FirstSlide = ({ onNext }) => {
              [text-shadow:0_0_6px_rgba(255,241,242,0.9),0_2px_6px_rgba(0,0,0,0.25)] 
              hover:scale-105 active:scale-95 transition"
       >
-        Tap here to continue
+        Ketuk di sini untuk melanjutkan
       </h1>
     </div>
   );

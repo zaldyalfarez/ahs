@@ -12,13 +12,13 @@ const ThirdSlide = () => {
 
   const renderCard = () => {
     switch (activeCard) {
-      case "Letter":
+      case "Surat":
         return <Letter />;
-      case "Notes":
+      case "Pesan":
         return <Notes />;
-      case "Music":
+      case "Musik":
         return <Music />;
-      case "Gallery":
+      case "Galeri":
         return <Gallery />;
       default:
         return <Letter />;

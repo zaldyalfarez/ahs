@@ -16,10 +16,10 @@ const NavBar = ({ active, setActive }) => {
 
   // Array objek: name = state, label = tampilan
   const items = [
-    { name: "Letter", label: "💌 Letter" },
-    { name: "Notes", label: "📝 Notes" },
-    { name: "Music", label: "🎵 Music" },
-    { name: "Gallery", label: "🖼️ Gallery" },
+    { name: "Surat", label: "💌 Surat" },
+    { name: "Pesan", label: "📝 Pesan" },
+    { name: "Musik", label: "🎵 Musik" },
+    { name: "Galeri", label: "🖼️ Galeri" },
   ];
 
   return (
