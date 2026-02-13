@@ -58,7 +58,7 @@ const SecondSlide = ({ onNext }) => {
     <div className="w-full h-screen flex items-center justify-center">
       <h1
         id="intro"
-        className="text-5xl sm:text-7xl md:text-8xl font-extrabold text-rose-500 text-center"
+        className="text-6xl sm:text-7xl md:text-8xl font-extrabold text-rose-500 text-center"
       >
         <span ref={firstRef} style={spanStyle}>
           Terima kasih
