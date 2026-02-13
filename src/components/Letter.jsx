@@ -11,14 +11,14 @@ const Letter = () => {
         <p className="text-gray-800 text-sm text-center">
           Asya, aku cuma mau bilang kalau setiap hari kamu bikin hidupku lebih
           berwarna. Ngobrol, kirim foto, telepon sampai larut malam, semua hal
-          kecil itu bikin aku bahagia, apalagi mengingat dulu aku sering
-          sendiri. Hampir dua tahun kita dekat, kamu banyak banget berkontribusi
-          bikin aku berubah jadi lebih baik, dan aku juga akan terus berusaha
-          untuk bisa gapai kamu. Maaf kalau aku banyak salah, tapi aku takut
-          kehilangan kamu, dan apapun yang terjadi aku akan selalu pilih kamu.
-          Jangan ragu curhat atau minta tolong ke aku, aku akan selalu berusaha
-          bantu semampuku, dan aku selalu mendoakan yang terbaik untuk kamu
-          setiap hari.
+          kecil itu bikin aku bahagia, mengingat kalau dulu aku sering sendiri.
+          Hampir dua tahun kita dekat, kamu banyak banget berkontribusi bikin
+          aku berubah ke arah yang lebih baik. Aku juga akan terus berusaha
+          untuk bisa gapai kamu lagi, aku takut kehilangan kamu, maaf kalau aku
+          banyak salah, apapun yang terjadi aku akan selalu pilih kamu. Jangan
+          ragu curhat atau minta tolong ke aku, aku akan selalu berusaha bantu
+          semampuku, dan aku selalu mendoakan yang terbaik untuk kamu setiap
+          hari. You mean so much to me.
         </p>
       </div>
     </>
