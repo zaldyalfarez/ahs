@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { gsap } from "gsap";
 
 const paragraphs = [
   "Setiap hari kamu bikin hidupku lebih berwarna. Dari ngobrol 24/7, bertukar kabar, kirim-kiriman foto, call sampai larut malam, kirim reels atau VT, mabar game, sampai semua hal kecil lainnya yang belum aku sebutin, semua itu bikin aku bahagia. Aku nggak pernah nyangka bisa sedekat ini sama seseorang yang bikin aku merasa nyaman dan dimengerti.",
@@ -10,14 +11,42 @@ const paragraphs = [
 
 const Letter = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const paragraphRef = useRef(null);
 
   const handleNext = () => {
-    if (currentIndex < paragraphs.length - 1)
-      setCurrentIndex((prev) => prev + 1);
+    if (currentIndex < paragraphs.length - 1) {
+      gsap.to(paragraphRef.current, {
+        duration: 0.3,
+        opacity: 0,
+        x: -50,
+        onComplete: () => {
+          setCurrentIndex((prev) => prev + 1);
+          gsap.fromTo(
+            paragraphRef.current,
+            { opacity: 0, x: 50 },
+            { duration: 0.3, opacity: 1, x: 0 },
+          );
+        },
+      });
+    }
   };
 
   const handleBack = () => {
-    if (currentIndex > 0) setCurrentIndex((prev) => prev - 1);
+    if (currentIndex > 0) {
+      gsap.to(paragraphRef.current, {
+        duration: 0.3,
+        opacity: 0,
+        x: 50,
+        onComplete: () => {
+          setCurrentIndex((prev) => prev - 1);
+          gsap.fromTo(
+            paragraphRef.current,
+            { opacity: 0, x: -50 },
+            { duration: 0.3, opacity: 1, x: 0 },
+          );
+        },
+      });
+    }
   };
 
   return (
@@ -29,8 +58,8 @@ const Letter = () => {
         Surat Pendek Buat Kamu
       </h2>
 
-      <div className="w-full h-60  rounded-lg flex items-center justify-center p-4 overflow-y-auto">
-        <p className="text-gray-800 text-sm text-balance">
+      <div className="w-full h-60 rounded-lg flex items-center justify-center p-4 overflow-y-auto">
+        <p ref={paragraphRef} className="text-gray-800 text-sm text-balance">
           {paragraphs[currentIndex]}
         </p>
       </div>

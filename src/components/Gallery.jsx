@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { gsap } from "gsap";
 import Img2 from "../assets/img/2.webp";
 import Img3 from "../assets/img/3.webp";
 import Img4 from "../assets/img/4.webp";
@@ -29,13 +30,42 @@ const images = [
 
 const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const imageRef = useRef(null);
 
   const handleNext = () => {
-    if (currentIndex < images.length - 1) setCurrentIndex((prev) => prev + 1);
+    if (currentIndex < images.length - 1) {
+      gsap.to(imageRef.current, {
+        duration: 0.3,
+        opacity: 0,
+        x: -50,
+        onComplete: () => {
+          setCurrentIndex((prev) => prev + 1);
+          gsap.fromTo(
+            imageRef.current,
+            { opacity: 0, x: 50 },
+            { duration: 0.3, opacity: 1, x: 0 },
+          );
+        },
+      });
+    }
   };
 
   const handleBack = () => {
-    if (currentIndex > 0) setCurrentIndex((prev) => prev - 1);
+    if (currentIndex > 0) {
+      gsap.to(imageRef.current, {
+        duration: 0.3,
+        opacity: 0,
+        x: 50,
+        onComplete: () => {
+          setCurrentIndex((prev) => prev - 1);
+          gsap.fromTo(
+            imageRef.current,
+            { opacity: 0, x: -50 },
+            { duration: 0.3, opacity: 1, x: 0 },
+          );
+        },
+      });
+    }
   };
 
   return (
@@ -49,6 +79,7 @@ const Gallery = () => {
 
       <div className="w-70 h-50 bg-gray-100 rounded-lg flex items-center justify-center mb-4 overflow-hidden">
         <img
+          ref={imageRef}
           src={images[currentIndex]}
           alt={`Gallery ${currentIndex + 1}`}
           className="w-full h-full object-cover"
