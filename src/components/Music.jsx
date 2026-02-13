@@ -28,7 +28,7 @@ const Music = () => {
         id="title-card"
         className="text-3xl font-semibold mb-4 text-center text-rose-600"
       >
-        Lagu Yang Bikin Inget Kamu
+        Lagu Yang Bikin Keinget Kamu
       </h2>
       <div className="w-full flex flex-col gap-3 items-center">
         {tracks.map((track, index) => (
@@ -39,11 +39,13 @@ const Music = () => {
             rel="noopener noreferrer"
             className="flex items-center bg-purple-100 border border-purple-300 rounded-lg px-4 py-3 text-gray-700 shadow-sm hover:bg-purple-200 transition-colors w-70 sm:w-full"
           >
-            {/* Icon musik */}
             <div className="mr-3 shrink-0 text-purple-600 text-lg">🎵</div>
             <div className="flex flex-col">
               <span className="font-semibold">{track.title}</span>
               <span className="text-sm text-gray-600">{track.artist}</span>
+            </div>
+            <div className="ml-auto text-purple-600 font-semibold flex items-center gap-1">
+              <span className="text-lg">👉</span>
             </div>
           </a>
         ))}
