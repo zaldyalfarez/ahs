@@ -1,10 +1,9 @@
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { gsap } from "gsap";
 import BubuGIF from "../assets/gif/BubuGIF.gif"; // import GIF
 
 const FirstSlide = ({ onNext }) => {
   const containerRef = useRef(null);
-  const imgRef = useRef(null);
 
   const handleNext = () => {
     gsap.to(containerRef.current, {
@@ -14,26 +13,12 @@ const FirstSlide = ({ onNext }) => {
     });
   };
 
-  useEffect(() => {
-    const img = imgRef.current;
-    if (img) {
-      const src = img.src;
-      img.src = "";
-      img.src = src;
-    }
-  }, []);
-
   return (
     <div
       ref={containerRef}
       className="w-full h-screen flex flex-col items-center justify-center"
     >
-      <img
-        ref={imgRef}
-        src={BubuGIF}
-        alt="gif"
-        className="w-60 h-60 object-contain"
-      />
+      <img src={BubuGIF} alt="gif" className="w-60 h-60 object-contain" />
 
       <h1
         onClick={handleNext}
