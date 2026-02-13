@@ -14,7 +14,6 @@ const NavBar = ({ active, setActive }) => {
     }
   }, []);
 
-  // Array objek: name = state, label = tampilan
   const items = [
     { name: "Surat", label: "💌 Surat" },
     { name: "Pesan", label: "📝 Pesan" },

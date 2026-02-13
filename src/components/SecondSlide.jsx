@@ -35,7 +35,6 @@ const SecondSlide = ({ onNext }) => {
       ease: "power2.in",
     });
 
-    // total delay otomatis
     const totalDuration = 0.5 + 1.75 + 0.7 + 1.5 + 1.2 + 1.0;
     const timeout = setTimeout(onNext, totalDuration * 1000);
 
