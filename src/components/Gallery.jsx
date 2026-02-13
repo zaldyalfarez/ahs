@@ -44,7 +44,7 @@ const Gallery = () => {
         id="title-card"
         className="text-3xl font-semibold mb-4 text-center text-rose-600"
       >
-        Kenangan Kecil Di Roblox
+        Kenangan Di Roblox
       </h2>
 
       <div className="w-70 h-50 bg-gray-100 rounded-lg flex items-center justify-center mb-4 overflow-hidden">
