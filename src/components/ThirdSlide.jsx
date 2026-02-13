@@ -7,7 +7,7 @@ import Music from "./Music";
 import Gallery from "./Gallery";
 
 const ThirdSlide = () => {
-  const [activeCard, setActiveCard] = useState("Letter");
+  const [activeCard, setActiveCard] = useState("Surat");
   const cardRef = useRef(null);
 
   const renderCard = () => {
